@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="jquery.min.js"></script>
+
+<script>
+var speed=800;
+var msg = new Array('',
+
+
+"小蒨小蒨大正妹",
+"還記得那封陳小蒨大正妹的信件嗎^^",
+"喔~~我的小蒨 喔~~~小蒨",
+"蒨蒨造句：<br>抽籤結果是我欠小蒨一千次牽手(XD",
+"小蒨:嚕嚕嚕呼呼答答答逼逼逼!!",
+"小蒨:呼嚕嚕，咚咚咚，哇啦啦嘿嘿轟～",
+"雖然不一定會看得到流星<br>但我有一整片星星(新心)要給妳~",
+"我還是要很老套的說：我愛妳。",
+"這一年來辛苦妳了<br>我總是太忙碌無法好好陪妳",
+"接下來的一年，也要多多指教哦^__^ 2011.11.18",
+"能夠為自己活很不容易<br>能夠找到最愛的人在寂寞地球一起生活更不容易。",
+"這一年來我們的回憶好多<br>還是老套的要謝謝妳 <br>忍受我的不禮貌和可惡忙碌行程還有自己都不知道的打呼聲<br>還有不太浪漫:)",
+"我會持續成為小蒨最棒的男朋友努力著!!!!",
+"以後有心事要跟我說哦<br>我都是一直傾聽著:)",
+"嘿嘿<br>說好的308和貓空還有好多夢想都不可以忘記唷:P",
+"我們要創造更多回憶<br>讓這一生不會後悔",
+"謝謝妳喜歡我的藍白拖<br>還有我的特別<p>我絕對獨特但也孤獨<br>更需要知音相惜",
+"小蒨花~~承諾‧信任‧包容‧支持<br>如果妳受傷難過不開心<br>記得我是最想陪妳的那個<br>",
+"心慌的筆觸　多麼難以形容<br>　都是因為太過愛你了　反而單薄<br> (給你的歌/周傳雄)",
+"好期待我們一起到文學獎的舞台<br>文學與人文感動是<br>一個我們牽著手一直走下去的美麗的橋",
+"啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵",
+"小蒨是個很可愛的聰明蛋<br>時而單純可愛的令人無法招架<br>時而又太過聰明體貼:]",
+"走過流星<br>看過星空無論夜空月亮多華美<br>妳才是我心中無法取代的那一顆星",
+"接下來一年也請多多指教！<br>歡迎寫改進(bug)清單給我<br>我會慢慢變得更好(debug)的^O^",
+"煩惱憂愁悲傷 一切都不重要<br>抱著你 抱著你 抱著你<br>我只要抱著你 抱著你 抱著你<br>(縱貫線/抱著你)",
+"啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵"
+);
+$(function() {
+ // Handler for .ready() called.
+ 
+ 
+ var i=0;
+ for(i;i<=25;i++)
+ {
+	 $('#s'+i).mouseover(function(){
+
+		var j= this.id.slice(1);		
+		//console.log(j);
+
+			$("#text").hide();
+		$("#text").fadeIn(speed);
+        $('#text').html( msg[j] + "");
+		$('#img').attr('src',"pic"+j+".jpg");
+		
+			$("#img").hide();
+		$("#img").fadeIn(speed);
+    });
+
+ $('#s'+i).mouseout(function(){
+	$("#text").hide();
+	$("#text").fadeIn(speed);
+  $("#text").html("陳小蒨X張小均 1 年了耶>//<  ");
+	  });
+ 
+ }
+ i=1
+ 
+});
+
+
+</script>
+<style>
+body
+{
+	background-color:black;
+	background-image:url(back.gif);
+overflow: hidden	
+}
+
+div
+{
+	color:#FFF;
+	text-decoration:none;
+	width: 51px;
+	height: 51px;
+	position:absolute;
+	float:left;
+
+	background-image:url(star_small.png);
+	font-size:0px;
+	
+}
+.text
+{
+	color:#F9F;
+	text-decoration:none;
+	width: 586px;
+	height: 501px;
+	position:absolute;
+	float:left;
+	background-image:url();
+	font-size:xx-large;
+	left: 195px;
+	top: 73px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>陳小蒨x張小均 1 年了耶</title>
+</head>
+
+<body>
+<a href="pic.zip" target="_blank"> 
+<img id='img' style="position:absolute; left: 120px; top: 356px;" src="pic1.jpg" width="300" />
+</a>
+<div id="text" class="text"> 
+  <p>陳小蒨x張小均 1 年了耶&gt;//&lt;</p>
+
+</div>
+<div id="s1" style="left: 118px; top: 157px;">.</div>
+<div id="s2" style="left: 135px; top: 226px;">.</div>
+<div id="s3" style="left: 147px; top: 27px;">.</div>
+<div id="s4" style="left: 177px; top: 275px;">.</div>
+<div id="s5" style="left: 226px; top: 292px;">.</div>
+<div id="s6" style="left: 801px; top: 437px;">.</div>
+<div id="s7" style="left: 301px; top: 287px;">.</div>
+<div id="s8" style="left: 942px; top: 384px;">.</div>
+<div id="s9" style="left: 469px; top: 397px;">.</div>
+<div id="s10" style="left: 571px; top: 314px;">.</div>
+<div id="s11" style="left: 132px; top: 91px;">.</div>
+<div id="s12" style="left: 484px; top: 304px;">.</div>
+<div id="s13" style="left: 763px; top: 387px;">.</div>
+<div id="s14" style="left: 850px; top: 489px;">.</div>
+<div id="s15" style="left: 899px; top: 436px;">.</div>
+<div id="s16" style="left: 548px; top: 474px;">.</div>
+<div id="s17" style="left: 750px; top: 156px;">.</div>
+<div id="s18" style="left: 626px; top: 391px;">.</div>
+<div id="s19" style="left: 818px; top: 146px;">.</div>
+<div id="s20" style="left: 764px; top: 194px;">.</div>
+<div id="s21" style="left: 808px; top: 220px;">.</div>
+<div id="s22" style="left: 873px; top: 199px;">.</div>
+<div id="s23" style="left: 843px; top: 97px;">.</div>
+<div id="s24" style="left: 791px; top: 68px;">.</div>
+<div id="s25" style="left: 749px; top: 107px;">.</div>
+</body>
+</html>
